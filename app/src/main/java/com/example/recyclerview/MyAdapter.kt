@@ -13,7 +13,6 @@ class MyAdapter(var cartList:List<Meals>) : RecyclerView.Adapter<MyAdapter.CartV
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CartViewHolder {
         val binding = CardViewBinding.inflate(LayoutInflater.from(parent.context),parent,false)
-
         return CartViewHolder(binding)
     }
 
@@ -22,8 +21,6 @@ class MyAdapter(var cartList:List<Meals>) : RecyclerView.Adapter<MyAdapter.CartV
     }
 
     override fun onBindViewHolder(holder: CartViewHolder, position: Int) {
-        holder.binding.name.text = cartList[position].name
-        holder.binding.mail.text = cartList[position].mail
-        holder.binding.password.text = cartList[position].password
+
     }
 }
